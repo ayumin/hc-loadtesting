@@ -1,5 +1,6 @@
 class PackagesController < ApplicationController
   before_action :set_package, only: [:show, :edit, :update, :destroy]
+  protect_from_forgery except: :create
 
   # GET /packages
   # GET /packages.json
