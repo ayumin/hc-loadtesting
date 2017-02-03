@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Packages</h1>
-
+<br>
+  <%= link_to '<div class="btn btn-primary btn-sm">New</div>', new_package_path %>
+<br>
 <table class="table">
   <thead>
     <tr>
@@ -28,6 +30,3 @@
 </table>
 
 <br>
-<div class="btn btn-primary">
-  <%= link_to 'New Package', new_package_path %>
-</div>
